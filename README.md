@@ -30,15 +30,14 @@ Following directory structure will be created after setup completes.
   `/bigdata/workspace/examples`  
 7. Run hive -f command to setup the 'storedb'.  
   ` hive-sql.sh -f ./workspace/examples/db/store_db.ddls.hql `  
-8. Run hive -f command to load data into storedb from the datafiles.
+8. Run hive -f command to load data into storedb from the datafiles.  
   ` hive-sql.sh -f ./workspace/examples/db/store_db.dataload.hql`   
 9. Go through the SQL tutorial online and start executing one by one. URL: https://www.w3schools.com/sql  
 10. Use hive-sql.sh, spark-sql.sh to start Hive and Spark sql consoles or follow the commands inside sh files.  
 11. Use spark-shell.sh, spark-submit.sh to work with Spark APIs and SQLs or follow the commands inside sh files.  
 
 #### Local mode setup information
-Hadoop is installed in local mode. This means your local file system is hdfs. Try running hdfs commands after sourcing setenv.sh.  
-e.g. 
+Hadoop is installed in local mode. This means your local file system is hdfs. Try running hdfs commands after sourcing setenv.sh.  e.g.  
 ```  
   hadoop version  
   hdfs dfs -ls \    
