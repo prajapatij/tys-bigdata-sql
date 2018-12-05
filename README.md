@@ -11,7 +11,7 @@ Following directory structure will be created after setup completes.
 |_ installers <- downloaded binaries  
 |_ examples <- Sample database and HQL files for DDL and data load  
 |_ data <- HDFS data directory to hold Hive warehouse and other data files  
-~~~~~     |_ warehouse <- Hive warehouse  
+___     |_ warehouse <- Hive warehouse  
 |_ workspace <- Holds all the working code  
 |_ setenv.sh <- Contains all environment variables  
 |_ hive-sql.sh <- Hive sql runner  
