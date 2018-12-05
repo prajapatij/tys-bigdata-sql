@@ -44,3 +44,9 @@ Hadoop is installed in local mode. This means your local file system is hdfs. Tr
 ```
 It uses default derby as Hive metastore. Make sure to use it from the install directory e.g. /bigdata to make derby available.
 
+### Upgrades Information
+* Use release_download_3_1_1.config file to upgrade to the latest versions of the setup.   
+* Use setup_with_auth.sh to download the installers with given user id.
+
+##### Derby databse conflict between Hive & Spark
+In latest versions of Hive & Spark there is a conflict between the default derby driver (derby-10.14.1.0 vs derby-10.12.1.1). Due to this there will be exception while running the spark. To solve this, remove the deby jar (derby-10.14.1.0.jar) from ./sdk/hive/lib and copy the one from ./sdk/spark/jars.
