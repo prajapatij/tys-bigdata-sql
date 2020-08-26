@@ -3,7 +3,7 @@ Teach yourself SQL in BigData using Hive and Spark queries on store database
 
 ### Directory structure  
 Following directory structure will be created after setup completes.  
-
+```  
 / *bigdata*  
 |_ release_download.config <- configure 'Hadoop', 'Hive' and 'Spark' versions and download urls, Also, specify JAVA_HOME  
 |_ setup.sh  <- Setup this build  
@@ -18,6 +18,7 @@ ___     |_ warehouse <- Hive warehouse
 |_ spark-sql.sh <- Spark sql runner  
 |_ spark-shell.sh <- Spark shell runner  
 |_ spark-submit.sh <- Spark submit job runner  
+```  
 
 ### Setup Steps   
 1. Clone the repository to the location where you want to install  
